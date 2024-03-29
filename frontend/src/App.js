@@ -1,13 +1,17 @@
-// index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MenuBar from './MenuBar';
 import SearchForm from './SearchForm';
+import MainSection from './MainSection';
 
 const App = () => {
   return (
-    <div>
-      <h1>Flight and Hotel Search App</h1>
-      <SearchForm />
+    <div className="app-container">
+      <MenuBar />
+      <MainSection />
+      <div className="content-container">        
+        <SearchForm />
+      </div>
     </div>
   );
 };

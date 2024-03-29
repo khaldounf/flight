@@ -1,0 +1,26 @@
+/* MainSection.css */
+.main-section {
+    width: 100%; /* Set width to 100% */
+    overflow: hidden; /* Hide overflow */
+    height: 800px;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.main-section img {
+    width: 100%; /* Set image width to 100% */
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    opacity: 0.8; /* Set image opacity to 80% */
+    z-index: 1; /* Ensure image is above gradient border */
+}
+
+.gradient-border {
+    position: absolute; /* Position the gradient border absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    z-index: 0; /* Ensure gradient border is behind the image */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Gradient border from transparent to white */
+    pointer-events: none; /* Ensure the gradient border doesn't interfere with mouse events */
+}

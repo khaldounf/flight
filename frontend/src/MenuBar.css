@@ -1,0 +1,66 @@
+/* MenuBar.css */
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: white;
+    color: #333;
+    height: 130px;
+    box-shadow: 0px 0px 60px 60px rgb(255, 238, 3, 0.5);
+}
+  
+.logo img {
+    width: 150px; /* Adjust according to your logo size */
+    padding: 10px 100px;
+}
+  
+.menu-links a {
+    margin-left: 20px;
+    padding: 20px 30px;
+    color: #0098db;
+    font-weight: bolder;
+    font-size: 21px;
+    text-decoration: none;
+    /* border-radius: 5px; */
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    overflow: hidden; /* Hide overflow to prevent overflow content from showing */   
+    transition: background-color 0.2s ease; 
+}
+  
+.menu-links a:hover {
+    background-color: rgb(235, 232, 232);
+}
+
+/* Add top border and change background color when hovering */
+.menu-links a:hover {
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+}
+
+.menu-links a:hover::before {
+    content: '';
+    position: absolute;
+    top: -1px; /* Adjust the position of the border to overlap with the top */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Adjust border thickness as needed */
+    background-color: #f5b412;
+    /* transition: width 0.3s ease;  */
+}
+
+.menu-links a .svg-inline--fa {
+    margin-right: 10px; 
+}
+
+.menu-links a:last-child {
+    background-color: #0098db; /* Set background color to blue */
+    color: white; /* Set text color to white */
+    padding: 15px 30px; /* Adjust padding for better appearance */
+}
+
+.menu-links a:last-child:hover {
+    background-color: #f5b412; /* Set background color to blue */
+    color: white; /* Set text color to white */
+    padding: 15px 30px; /* Adjust padding for better appearance */
+}
+
